@@ -3,6 +3,10 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 0;
+    background-image: url(../images/background1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #button-area {
@@ -19,6 +23,7 @@ body {
 
 #search-area {   
     height: 100%;   
+    margin-bottom: 10px;
 }
 
 #gif-area {
@@ -30,6 +35,7 @@ body {
     overflow: auto;
     padding: 15px;
     justify-content: center;
+    
 }
 #search-bar {
     margin: 10px;
@@ -67,6 +73,9 @@ p{
 
 .gif {
     width: 100%;
+}
+#gif{
+    margin-bottom: 30px;
 }
 .previous {
     margin: 11px;
