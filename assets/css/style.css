@@ -3,10 +3,30 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 0;
-    background-image: url(../images/background1.jpg);
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../images/background1.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+}
+#header {
+    min-height: 200px;
+    max-height: auto;
+    margin-bottom: 10px;
+    
+}
+#header-text {
+    font-family: 'Crimson Text', serif;
+    font-weight: 500;
+   color: white;
+    position: relative;
+    top: 20%;
+    font-size: 80px;
+
 }
 
 #button-area {
@@ -17,6 +37,7 @@ body {
     font-size: 40px;
     margin: 0 auto;
     text-align: center;
+    margin-top: 20px;
     margin-bottom: 10px;
    
 }
@@ -42,8 +63,7 @@ body {
     padding-right: 20px;
 }
 
-#search-button {
-    margin-left: 10px;
+#search-button {  
     margin-bottom: 30px;
 }
 
@@ -58,12 +78,21 @@ p{
     border-bottom: 3px dashed black;
 }
 
+#duplicate {
+    border: none;
+    color: red;
+    font-size: 12px;
+    visibility: hidden;
+    display: none;
+    
+}
 .custom{
     margin-right: 7px;
     padding: 5px;
     min-width: 10%;
     max-width: auto;
     overflow: wrap;
+    text-transform: capitalize;
 }
 
 #image {
@@ -77,6 +106,25 @@ p{
 #gif{
     margin-bottom: 30px;
 }
+
 .previous {
-    margin: 11px;
+    margin-bottom: 10px;
 }
+.card-text {
+    background-color: white !important;
+}
+
+#movies-area{
+ word-break: keep-all;
+ 
+}
+#movie-image {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.movie-info {
+    border: none;
+   
+}
+

@@ -18,7 +18,9 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+
 
     <title>GifTastic</title>
 
@@ -28,7 +30,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12" id="header">
-
+                <h1 class="text-center" id="header-text">GifTastic GIFs</h1>
             </div>
             <div class="container-fluid">
                 <div class="row">
@@ -56,16 +58,16 @@
                         </div>
                         <div class="card-body">
                             <label for="basic-url" id="search">Search GIFs: </label>
+                            <p id="duplicate">You have already searched that item!</p>
                             <div class="input-group mb-3">
                                 <input type="text" class="form-control" id="search-input"
-                                    aria-describedby="basic-addon3">
+                                    aria-describedby="basic-addon3" placeholder="Search">
                             </div>
                             <button type="button" class="btn btn-dark" id="search-button">Search</button>
 
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-8" id="gif">
                     <div class="card">
                         <div class="card-header">
@@ -76,16 +78,19 @@
 
                         </div>
                     </div>
-
                 </div>
+
             </div>
+
         </div>
+    </div>
 
 
 
 
 
-        <script src="assets/javascript/app.js"></script>
+
+    <script src="assets/javascript/app.js"></script>
 </body>
 
 </html>

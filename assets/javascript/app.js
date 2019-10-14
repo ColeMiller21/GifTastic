@@ -4,8 +4,9 @@ $(document).ready(function () {
     var results;
     var image;
     var button;
-    var buttonName;
     var topics = ["dog", "cat", "horse"];
+
+
 
     function renderButtons() {
         $("#button-area").empty();
@@ -26,13 +27,32 @@ $(document).ready(function () {
         event.preventDefault();
         search = $("#search-input").val().trim();
 
-        topics.push(search);
-        console.log(topics);
+        if (topics.includes(search.toLowerCase())) {
+            $("#duplicate").css({
+                "visibility": "visible",
+                "display": "block"
+            });
+            $("#search-input").val("");
+
+        }
+
+        else {
+            topics.push(search);
+            console.log(topics);
+            $("#duplicate").css({
+                "visibility": "hidden",
+                "display": "none"
+            });
+
+            //adding sessionStorage??
 
 
+            renderButtons();
+            displayGifs();
 
-        renderButtons();
-        displayGifs();
+        }
+
+
     });
 
     function displayGifs() {
@@ -53,7 +73,6 @@ $(document).ready(function () {
                 var gifDiv = $("<div>");
                 gifDiv.attr("id", "gif-div");
                 var p = $("<p>");
-
                 p.append("Rating : " + results[i].rating);
                 image = $("<img>");
                 image.attr("src", results[i].images.fixed_height_still.url);
@@ -115,8 +134,7 @@ $(document).ready(function () {
         }
     });
 
-    //var stillImage = results[i].images.fixed_height_still.url
-    // animate results[i].images.fixed_height.url
+
 
 
 
@@ -139,3 +157,4 @@ $(document).ready(function () {
     });
 
 });
+
