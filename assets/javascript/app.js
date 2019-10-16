@@ -4,8 +4,7 @@ $(document).ready(function () {
     var results;
     var image;
     var button;
-    var topics = ["dog", "cat", "horse"];
-
+    var topics = ["dallas cowboys", "football", "tom brady"];
 
 
     function renderButtons() {
@@ -44,7 +43,7 @@ $(document).ready(function () {
                 "display": "none"
             });
 
-            //adding sessionStorage??
+
 
 
             renderButtons();
@@ -91,7 +90,8 @@ $(document).ready(function () {
     };
 
 
-    $(".button").on("click", function () {
+    $(document).on("click", ".button", function () {
+        console.log("button click");
         $("#gif-area").empty();
         search = $(this).attr("data-name");
         console.log(search);
