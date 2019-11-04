@@ -114,17 +114,4 @@ p{
     background-color: white !important;
 }
 
-#movies-area{
- word-break: keep-all;
- 
-}
-#movie-image {
-    float: left;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-.movie-info {
-    border: none;
-   
-}
 
