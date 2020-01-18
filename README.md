@@ -1,5 +1,9 @@
 # GifTastic
 
+<div align="left">
+    <img src="assets/images/Giftastic-Original.png" width="400px"</img> 
+</div>
+
 ## Table of Contents
 
 * [About the Project](#about-the-project)
